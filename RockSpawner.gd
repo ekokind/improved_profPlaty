@@ -20,6 +20,5 @@ func _set_rock_position(rock):
 	rock.position = Vector2(300, rand_range(0, rect.y))
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _on_SpawnTimer_timeout():
+	_spawn_rock()
