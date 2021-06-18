@@ -16,7 +16,9 @@ func _spawn_rock():
 
 func _set_rock_position(rock):
 	var rect = get_viewport().size
-	rock.position = Vector2(rand_range(0, rect.x), -100)
+	print()
+	rock.position = Vector2(300, rand_range(0, rect.y))
+
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
